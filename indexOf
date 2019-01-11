@@ -1,0 +1,26 @@
+package string;
+/**
+ * int indexOf(String str)
+ * 在当前字符串中查找给定字符串所在的位置，
+ * 若当前字符串
+ * 不含有给定内容则返回值为-1
+ * @author soft01
+ *
+ */
+public class IndexOfDemo {
+
+	public static void main(String[] args) {
+		//							   012345678912345
+		String str = "thinking in java";
+		
+		int index = str.indexOf("in");
+		System.out.println("index"+index);
+		//从指定位置开始检索第一次出现的位置
+		index = str.indexOf("in",3);
+		System.out.println("index"+index);
+		//检索最后一次出现的位置
+		index = str.lastIndexOf("in");
+		System.out.println("index"+index);
+	}
+
+}
